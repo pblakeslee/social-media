@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Social Media</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="social.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+		/>
+	</head>
+
+	<body>
+		<main>
+			<h1>Tell me what you want</h1>
+			<div class="new-comment">
+				<textarea
+					onfocus="this.value=''"
+					placeholder="What you really really want..."
+					id="comment"
+					rows="4"
+					cols="50"
+				></textarea>
+				<div class="buttonContainer">
+					<div class="lightDark">
+						<button id="moon">
+							<i class="fas fa-moon"></i>
+						</button>
+					</div>
+					<button id="add">Add Comment</button>
+				</div>
+			</div>
+
+			<div class="comments">
+				<div class="comment">
+					<div class="top">
+						<h3>Matthew Fanto</h3>
+						<span>02/25/2020</span>
+					</div>
+					<p>Hello world!</p>
+				</div>
+			</div>
+		</main>
+
+		<script src="./social.js"></script>
+	</body>
+</html>

@@ -1,0 +1,190 @@
+/* Make the last child a color? */
+/* light gray body, rounded white comments with drop shadow */
+/* add user image */
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-color: #f7f7f7;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	padding: 3rem;
+	max-width: 420px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 100px;
+}
+
+table tr {
+	padding: 1rem;
+}
+
+table td {
+	padding: 1rem;
+}
+
+.new-person {
+	margin-bottom: 2rem;
+}
+
+.comment {
+	background-color: white;
+	border-radius: 10px;
+	filter: drop-shadow(3px 3px 4px #bdbdbd);
+	padding: 15px;
+	width: 400px;
+	margin: 15px;
+	font-family: "Poppins", sans-serif;
+}
+
+.comment:last-child {
+	background-color: rgb(174, 255, 210);
+	border: 3px solid rgb(138, 233, 181);
+}
+
+.comment:last-child span {
+	color: black;
+}
+
+.comment h3 {
+	display: inline;
+	align-items: right;
+	font-weight: 500;
+}
+
+.comment span {
+	font-weight: 300;
+	color: rgb(169, 169, 169);
+}
+
+.comment p {
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 15px;
+	padding-top: 5px;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+
+textarea {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	padding: 10px;
+	max-width: 400px;
+	border-radius: 10px;
+	border: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+h1 {
+	font-family: "Poppins", sans-serif;
+	padding-bottom: 40px;
+}
+
+button {
+	font-family: "Poppins", sans-serif;
+	background-color: rgb(29, 29, 29);
+	color: white;
+	padding: 8px 15px;
+	border-radius: 5px;
+	border: none;
+	margin: 10px 0px;
+	font-size: 12px;
+}
+
+button:hover {
+	background-color: rgb(84, 84, 84);
+}
+
+button:active {
+	background-color: rgb(26, 26, 26);
+}
+
+button:focus {
+	outline: none;
+}
+
+.lightDark {
+	display: flex;
+}
+.lightDark button {
+	background-color: white;
+	color: black;
+	padding: 7px 10px;
+	border-radius: 20px;
+	border: 1px solid rgb(235, 235, 235);
+	margin-right: 5px;
+}
+
+.lightDark button:hover {
+	border: 1px solid rgb(181, 181, 181);
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* start dark mode code */
+
+body.dark-mode {
+	background-color: #212121;
+}
+
+body.dark-mode h1 {
+	color: white;
+}
+
+body.dark-mode textarea {
+	background-color: #454545;
+	color: white;
+}
+
+body.dark-mode textarea::placeholder {
+	color: #8c8c8c;
+}
+
+body.dark-mode button {
+	background-color: #e3e3e3;
+	color: black;
+}
+
+body.dark-mode button:hover {
+	background-color: #b6b6b6;
+}
+
+body.dark-mode button:active {
+	background-color: #e3e3e3;
+}
+
+body.dark-mode .comment {
+	background-color: #454545;
+	filter: drop-shadow(3px 3px 4px #171717);
+	color: white;
+}
+body.dark-mode .comment span {
+	color: white;
+}
+
+body.dark-mode .comment:last-child {
+	background-color: rgb(101, 144, 255);
+	border: 3px solid rgb(36, 90, 227);
+}
